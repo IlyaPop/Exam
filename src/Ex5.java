@@ -3,24 +3,30 @@ import java.util.Scanner;
 public class Ex5 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("4 вариант");
+        System.out.println("1 вариант");
         double x = input.nextDouble();
+        double b = 2;
         double a = 3;
-        double b = 4;
-        if (x <= 2) {
-            System.out.println((a + x * x) / (b + Math.log(Math.abs(x) + 1)));
-        } else if (x > 2) {
-            System.out.println(Math.pow(Math.E, x) + x * x);
+        if (x <= 3) {
+            System.out.println(b + 2 * Math.log(Math.abs(x)));
+        } else if (x > 3) {
+            System.out.println(x * x / x * x + a);
         }
 
-        System.out.println("\n6 вариант");
+        System.out.println("\n9 вариант");
         double x1 = input.nextDouble();
-        double a1 = 3;
-        double b1 = 4;
-        if (x1 <= -1) {
-            System.out.println(a1 * Math.tan(x1 * x1));
-        } else if (x > 1) {
-            System.out.println(b1 + (x1 * x1 / x1 * x1 + a1));
+        if (x >= 2) {
+            System.out.println(Math.sqrt(1 + x1 * Math.sqrt(a * x1)));
+        } else if (x < 2) {
+            System.out.println(a * Math.sin(b * x1) + 3);
+        }
+
+        System.out.println("\n10 вариант");
+        double x2 = input.nextDouble();
+        if (x <= 0) {
+            System.out.println(Math.sqrt(Math.pow(Math.E, 2 * x2 - b) - 1));
+        } else if (x > 0) {
+            System.out.println(1 / (x2 * x2 + a));
         }
     }
 }
