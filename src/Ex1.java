@@ -3,7 +3,7 @@ public class Ex1 {
         System.out.println("1 вариант");
         double a = 35;
         double z1 = Math.cos(a) + Math.sin(a) + Math.cos(3 * a) + Math.sin(3 * a);
-        double z2 = 0.25 - (0.25 * Math.sin(2.5 * Math.PI - 8 * a));
+        double z2 = 0.25 - 0.25 * Math.sin(2.5 * Math.PI - 8 * a);
         System.out.println(z1);
         System.out.println(z2);
 
